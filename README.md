@@ -192,6 +192,8 @@ FireDetect/
 - If `models/fire_yolov8n.pt` is missing, the app downloads the stock COCO `yolov8n.pt` and automatically switches to demo/desk mode.
 - The dataset and training notebook are not part of this repository; the model was trained on a fire/smoke detection dataset and is intended for demonstration, not life-safety use.
 
+**Why isn't the model in `requirements.txt`?** `requirements.txt` lists Python packages only — model weights are not a pip dependency. The trained fire model is committed directly to `models/fire_yolov8n.pt`, so cloning the repository is enough; there is no separate download step. The stock COCO `yolov8n.pt` is intentionally not committed: Ultralytics downloads it automatically if the custom weights are missing.
+
 ---
 
 ## Limitations & Roadmap
