@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+
+# Virtual environment
+venv/
+.venv/
+env/
+
+# Downloaded baseline weights (the trained fire model in models/ IS tracked)
+/yolov8n.pt
+*.onnx
+*.engine
+
+# Runtime artifacts
+runs/
+outputs/
+*.log
+recordings/
+*.avi
+*.mp4
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
